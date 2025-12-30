@@ -1,0 +1,248 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-30T00:00:00Z",
+  "patterns": {
+    "login_email_input": {
+      "description": "Email input field on login page",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "textbox",
+          "textContains": "email",
+          "priority": 1
+        },
+        {
+          "type": "css_selector",
+          "value": "input[type='email'], input[name='email']",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "login_password_input": {
+      "description": "Password input field on login page",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "textbox",
+          "textContains": "password",
+          "priority": 1
+        },
+        {
+          "type": "css_selector",
+          "value": "input[type='password']",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "login_submit_button": {
+      "description": "Submit button on login form",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "sign in",
+          "priority": 1
+        },
+        {
+          "type": "text_contains",
+          "textContains": "continue",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "address_input": {
+      "description": "Delivery address input field",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "combobox",
+          "textContains": "address",
+          "priority": 1
+        },
+        {
+          "type": "text_contains",
+          "textContains": "deliver to",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "restaurant_card": {
+      "description": "Restaurant listing card on browse page",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "link",
+          "context": "restaurant listing",
+          "priority": 1
+        }
+      ],
+      "healingHistory": []
+    },
+    "menu_item": {
+      "description": "Menu item card on restaurant page",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "context": "menu item section",
+          "priority": 1
+        }
+      ],
+      "healingHistory": []
+    },
+    "add_to_cart_button": {
+      "description": "Button to add menu item to cart",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "add to order",
+          "priority": 1
+        },
+        {
+          "type": "text_contains",
+          "textContains": "add to cart",
+          "priority": 2
+        },
+        {
+          "type": "text_contains",
+          "textContains": "add 1 to order",
+          "priority": 3
+        }
+      ],
+      "healingHistory": []
+    },
+    "cart_button": {
+      "description": "Cart/bag button to view cart",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "cart",
+          "priority": 1
+        },
+        {
+          "type": "text_contains",
+          "textContains": "view cart",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "checkout_button": {
+      "description": "Button to proceed to checkout",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "checkout",
+          "priority": 1
+        },
+        {
+          "type": "text_contains",
+          "textContains": "continue to checkout",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "place_order_button": {
+      "description": "Final button to place the order",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "place order",
+          "priority": 1
+        }
+      ],
+      "healingHistory": []
+    },
+    "order_history_link": {
+      "description": "Link to view order history",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "link",
+          "textContains": "orders",
+          "priority": 1
+        }
+      ],
+      "healingHistory": []
+    },
+    "reorder_button": {
+      "description": "Button to reorder a previous order",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "reorder",
+          "priority": 1
+        }
+      ],
+      "healingHistory": []
+    },
+    "tip_option": {
+      "description": "Tip selection option on checkout",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "radio",
+          "context": "tip selection",
+          "priority": 1
+        },
+        {
+          "type": "aria_role",
+          "role": "button",
+          "textContains": "$",
+          "priority": 2
+        }
+      ],
+      "healingHistory": []
+    },
+    "track_order_button": {
+      "description": "Button to track current order",
+      "version": 1,
+      "lastUpdated": "2025-12-30T00:00:00Z",
+      "strategies": [
+        {
+          "type": "aria_role",
+          "role": "link",
+          "textContains": "track",
+          "priority": 1
+        }
+      ],
+      "healingHistory": []
+    }
+  }
+}
