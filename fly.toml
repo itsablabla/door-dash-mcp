@@ -1,7 +1,7 @@
 # DoorDash MCP Server - Fly.io Configuration
 # Part of GARZA OS Infrastructure
 
-app = "doordash-mcp"
+app = "garza-doordash-mcp"
 primary_region = "den"
 
 [build]
